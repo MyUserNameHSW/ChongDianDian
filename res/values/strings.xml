@@ -48,4 +48,6 @@
     <string name="money_type4">自定义</string>
     <string name="choose_time">选择订阅时间</string>
     <string name="choose_address">选择收货地址</string>
+    <string name="title_activity_pi_pei_list">PiPeiListActivity</string>
+    <string name="pipei_result">匹配结果</string>
 </resources>

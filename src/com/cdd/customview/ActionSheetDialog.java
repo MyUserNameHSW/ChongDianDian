@@ -211,7 +211,7 @@ public class ActionSheetDialog {
 	}
 
 	public enum SheetItemColor {
-		Blue("#037BFF"), Red("#FD4A2E"),Gray("#666666"),S_GREEN("#3DC1B1");
+		Blue("#76bfc3"), Red("#FD4A2E"),Gray("#666666"),S_GREEN("#3DC1B1");
 
 		private String name;
 

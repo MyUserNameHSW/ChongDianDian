@@ -44,6 +44,7 @@
                 android:textSize="18sp" />
 
             <TextView
+                android:id="@+id/leibieChoose"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="20dp"
@@ -67,6 +68,7 @@
                 android:textSize="18sp" />
 
             <TextView
+                android:id="@+id/pinzhongChoose"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="20dp"
@@ -90,6 +92,7 @@
                 android:textSize="18sp" />
 
             <TextView
+                android:id="@+id/ageChoose"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="20dp"
@@ -105,7 +108,7 @@
             android:textColor="@color/blackTextColor"
             android:layout_marginLeft="10dp"
             android:textSize="18sp" />
-        <TextView 
+        <EditText 
             android:id="@+id/other_info"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"

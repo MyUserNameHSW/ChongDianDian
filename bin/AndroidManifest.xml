@@ -36,6 +36,10 @@
             android:name="com.cdd.chongdiandian.ChoosePayActivity"
             android:label="@string/title_activity_choose_pay" >
         </activity>
+        <activity
+            android:name="com.cdd.chongdiandian.PiPeiListActivity"
+            android:label="@string/title_activity_pi_pei_list" >
+        </activity>
     </application>
 
 </manifest>
