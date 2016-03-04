@@ -1,0 +1,23 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/mm"
+    tools:context=".MainActivity" >
+
+    <include
+        android:id="@+id/bottom_view"
+        layout="@layout/bottom_menu" />
+
+    <FrameLayout
+        android:id="@+id/top_view"
+        style="@style/mw"
+        android:layout_alignParentTop="true" >
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/main_content"
+        style="@style/mm"
+        android:layout_above="@id/bottom_view"
+        android:layout_below="@id/top_view" >
+    </FrameLayout>
+
+</RelativeLayout>

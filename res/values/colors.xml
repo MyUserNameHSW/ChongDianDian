@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="themeColor">#76bfc3</color>
+    <color name="morebtnColor">#76bfc3</color>
+    <color name="morebtnpressColor">#5db0b5</color>
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+    <color name="blackTextColor">#606060</color>
+    <color name="backgroundColor">#eceeee</color>
+    <color name="gray1">#f0f0f0</color>
+    <color name="mred">#fc6e51</color>
+    <color name="mblue">#4fc1e9</color>
+    <color name="mgreen">#4ace83</color>
+    <color name="myellow">#fdc517</color>
+    <color name="onekeybuypressColor">#DDA814</color>
+    <color name="subpressColor">#0199CC</color>
+</resources>

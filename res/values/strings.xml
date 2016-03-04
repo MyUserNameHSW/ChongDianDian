@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">宠点点</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="index">主页</string>
+    <string name="order">订单</string>
+    <string name="mine">我的</string>
+    <string name="subcusion">私宠定制</string>
+    <string name="onekeybuy">一键购买</string>
+    <string name="timedistance">您的预定发货倒计时</string>
+    <string name="hotrecommend">热门推荐</string>
+    <string name="suborder">订阅订单</string>
+    <string name="peicaning">配餐中</string>
+    <string name="daiqueren">待确认</string>
+    <string name="allorder">查看全部订单</string>
+    <string name="daifukuan">待付款</string>
+    <string name="daifahuo">待发货</string>
+    <string name="daishouhuo">待收货</string>
+    <string name="daipingjia">待评价</string>
+    <string name="tuihuo">退货/售后</string>
+    <string name="bangzhu">帮助</string>
+    <string name="loginorregister">请登录</string>
+    <string name="wallet">我的钱包</string>
+    <string name="coupon">我的优惠券</string>
+    <string name="message">消息中心</string>
+    <string name="addressManger">收货地址</string>
+    <string name="aboutus">关于我们</string>
+    <string name="feedback">问题反馈</string>
+    <string name="title_activity_info_page_one">InfoPageOneActivity</string>
+    <string name="leibie">类别</string>
+    <string name="peizhong">品种</string>
+    <string name="age">年龄</string>
+    <string name="another_info">其他信息请留言</string>
+    <string name="leibie_hint">请选择类别</string>
+    <string name="pinzhong_hint">请选择品种</string>
+    <string name="age_hint">请选择年龄</string>
+    <string name="nexttip">下一步</string>
+    <string name="sub_sub">提交订单</string>
+    <string name="start_pipei">一键匹配</string>
+    <string name="title_activity_one_key_buy">OneKeyBuyActivity</string>
+    <string name="title_activity_choose_pay">ChoosePayActivity</string>
+    <string name="choose_type">选择方案（每月金额）</string>
+    <string name="money_type1">200</string>
+    <string name="money_type2">500</string>
+    <string name="money_type3">800</string>
+    <string name="money_type4">自定义</string>
+    <string name="choose_time">选择订阅时间</string>
+    <string name="choose_address">选择收货地址</string>
+</resources>
