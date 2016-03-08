@@ -40,6 +40,30 @@
             android:name="com.cdd.chongdiandian.PiPeiListActivity"
             android:label="@string/title_activity_pi_pei_list" >
         </activity>
+        <activity
+            android:name="com.cdd.chongdiandian.LoginActivity"
+            android:label="@string/title_activity_login" >
+        </activity>
+        <activity
+            android:name="com.cdd.chongdiandian.RegisterActivity"
+            android:label="@string/title_activity_register" >
+        </activity>
+        <activity
+            android:name="com.cdd.chongdiandian.MsgLoginActivity"
+            android:label="@string/title_activity_msg_login" >
+        </activity>
+        <activity
+            android:name="com.cdd.chongdiandian.ForgetCodeActivity"
+            android:label="@string/title_activity_forget_code" >
+        </activity>
+        <activity
+            android:name="com.cdd.chongdiandian.SetNewCodeActivity"
+            android:label="@string/title_activity_set_new_code" >
+        </activity>
+        <activity
+            android:name="com.cdd.chongdiandian.GoodDetailActivity"
+            android:label="@string/title_activity_good_detail" >
+        </activity>
     </application>
 
 </manifest>
