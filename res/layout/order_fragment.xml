@@ -34,6 +34,7 @@
             android:orientation="horizontal" >
 
             <TextView
+                android:id="@+id/peicanzhong"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -50,6 +51,7 @@
                 android:background="@color/gray1" />
 
             <TextView
+                android:id="@+id/daiquerening"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="1dp"

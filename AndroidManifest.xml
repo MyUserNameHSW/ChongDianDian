@@ -64,6 +64,18 @@
             android:name="com.cdd.chongdiandian.GoodDetailActivity"
             android:label="@string/title_activity_good_detail" >
         </activity>
+        <activity
+            android:name="com.cdd.chongdiandian.DealOrderActivity"
+            android:label="@string/title_activity_deal_order" >
+        </activity>
+        <activity
+            android:name="com.cdd.chongdiandian.ConfirmOrderActivity"
+            android:label="@string/title_activity_confirm_order" >
+        </activity>
+        <activity
+            android:name="com.cdd.chongdiandian.PetListSearchActivity"
+            android:label="@string/title_activity_pet_list_search" >
+        </activity>
     </application>
 
 </manifest>
