@@ -52,6 +52,7 @@
         </RelativeLayout>
 
         <RelativeLayout
+            android:id="@+id/mine_text1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="15dp"
@@ -66,7 +67,6 @@
                 android:src="@drawable/u314" />
 
             <TextView
-                android:id="@+id/mine_text1"
                 style="@style/mine_item_text"
                 android:layout_toRightOf="@id/mine_img1"
                 android:text="@string/wallet" />
@@ -77,6 +77,7 @@
         </RelativeLayout>
 
         <RelativeLayout
+            android:id="@+id/mine_text2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="1dp"
@@ -91,7 +92,6 @@
                 android:src="@drawable/u316" />
 
             <TextView
-                android:id="@+id/mine_text2"
                 style="@style/mine_item_text"
                 android:layout_toRightOf="@id/mine_img2"
                 android:text="@string/coupon" />
@@ -102,6 +102,7 @@
         </RelativeLayout>
 
         <RelativeLayout
+            android:id="@+id/mine_text3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="15dp"
@@ -116,7 +117,6 @@
                 android:src="@drawable/u318" />
 
             <TextView
-                android:id="@+id/mine_text3"
                 style="@style/mine_item_text"
                 android:layout_toRightOf="@id/mine_img3"
                 android:text="@string/message" />
@@ -127,6 +127,7 @@
         </RelativeLayout>
 
         <RelativeLayout
+            android:id="@+id/mine_text4"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="1dp"
@@ -141,7 +142,6 @@
                 android:src="@drawable/u320" />
 
             <TextView
-                android:id="@+id/mine_text4"
                 style="@style/mine_item_text"
                 android:layout_toRightOf="@id/mine_img4"
                 android:text="@string/addressManger" />
@@ -151,6 +151,7 @@
                 android:src="@drawable/u102" />
         </RelativeLayout>
         <RelativeLayout
+            android:id="@+id/mine_text5"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="15dp"
@@ -165,7 +166,6 @@
                 android:src="@drawable/u322" />
 
             <TextView
-                android:id="@+id/mine_text5"
                 style="@style/mine_item_text"
                 android:layout_toRightOf="@id/mine_img5"
                 android:text="@string/aboutus" />
@@ -176,6 +176,7 @@
         </RelativeLayout>
 
         <RelativeLayout
+            android:id="@+id/mine_text6"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="1dp"
@@ -190,7 +191,6 @@
                 android:src="@drawable/u324" />
 
             <TextView
-                android:id="@+id/mine_text6"
                 style="@style/mine_item_text"
                 android:layout_toRightOf="@id/mine_img6"
                 android:text="@string/feedback" />

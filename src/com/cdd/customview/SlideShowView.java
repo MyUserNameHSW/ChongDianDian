@@ -7,8 +7,10 @@ import java.util.concurrent.ScheduledExecutorService;
 import java.util.concurrent.TimeUnit;
 
 import android.content.Context;
+import android.content.Intent;
 import android.graphics.drawable.Drawable;
 import android.os.AsyncTask;
+import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
 import android.os.Parcelable;
@@ -25,12 +27,17 @@ import android.widget.ImageView;
 import android.widget.ImageView.ScaleType;
 import android.widget.LinearLayout;
 
+import com.cdd.chongdiandian.GoodDetailActivity;
 import com.cdd.chongdiandian.R;
 import com.nostra13.universalimageloader.cache.disc.naming.Md5FileNameGenerator;
 import com.nostra13.universalimageloader.core.ImageLoader;
 import com.nostra13.universalimageloader.core.ImageLoaderConfiguration;
 import com.nostra13.universalimageloader.core.assist.QueueProcessingType;
 
+/**
+ * @author HSW
+ *
+ */
 public class SlideShowView extends FrameLayout {
 
 	private ImageLoader imageLoader = ImageLoader.getInstance();
@@ -164,39 +171,60 @@ public class SlideShowView extends FrameLayout {
 			// TODO Auto-generated method stub
 			((ViewPager) container).removeView(imageViewsList.get(position));
 		}
-
+        /**
+         * 
+         */
 		@Override
 		public Object instantiateItem(ViewGroup container, int position) {
 			// TODO Auto-generated method stub
 
-			/*
-			 * final Intent intent = new Intent(getContext(),
-			 * ProductActivity.class); final Bundle bundle = new Bundle();
-			 * switch (position) { case 0:
-			 * imageViewsList.get(0).setOnClickListener( new
-			 * View.OnClickListener() {
-			 * 
-			 * @Override public void onClick(View arg0) { // TODO Auto-generated
-			 * method stub bundle.putInt("p_id", p_ids.get(0));
-			 * intent.putExtras(bundle); getContext().startActivity(intent); }
-			 * });
-			 * 
-			 * break; case 1: imageViewsList.get(1).setOnClickListener( new
-			 * View.OnClickListener() {
-			 * 
-			 * @Override public void onClick(View arg0) { // TODO Auto-generated
-			 * method stub bundle.putInt("p_id", p_ids.get(1));
-			 * intent.putExtras(bundle); getContext().startActivity(intent); }
-			 * }); break; case 2: imageViewsList.get(2).setOnClickListener( new
-			 * View.OnClickListener() {
-			 * 
-			 * @Override public void onClick(View arg0) { // TODO Auto-generated
-			 * method stub bundle.putInt("p_id", p_ids.get(2));
-			 * intent.putExtras(bundle); getContext().startActivity(intent); }
-			 * }); break; default:
-			 * 
-			 * break; }
-			 */
+			final Intent intent = new Intent(getContext(),
+					GoodDetailActivity.class);
+			final Bundle bundle = new Bundle();
+			switch (position) {
+			case 0:
+				imageViewsList.get(0).setOnClickListener(
+						new View.OnClickListener() {
+
+							@Override
+							public void onClick(View arg0) { // TODO
+																// Auto-generated
+																// method stub
+//								bundle.putInt("p_id", p_ids.get(0));
+//								intent.putExtras(bundle);
+								getContext().startActivity(intent);
+							}
+						});
+
+				break;
+			case 1:
+				imageViewsList.get(1).setOnClickListener(
+						new View.OnClickListener() {
+
+							@Override
+							public void onClick(View arg0) {
+//								bundle.putInt("p_id", p_ids.get(1));
+//								intent.putExtras(bundle);
+								getContext().startActivity(intent);
+							}
+						});
+				break;
+			case 2:
+				imageViewsList.get(2).setOnClickListener(
+						new View.OnClickListener() {
+
+							@Override
+							public void onClick(View arg0) {
+//								bundle.putInt("p_id", p_ids.get(2));
+//								intent.putExtras(bundle);
+								getContext().startActivity(intent);
+							}
+						});
+				break;
+			default:
+
+				break;
+			}
 			return super.instantiateItem(container, position);
 		}
 
@@ -346,12 +374,9 @@ public class SlideShowView extends FrameLayout {
 				 * = object.getInt("p_id"); String img = "http://" + IP +
 				 * ":8080" + res;
 				 */
-				imageUrls
-						.add("http://115.28.111.135:8080/img/cdd_slide1.jpg");
-				imageUrls
-						.add("http://115.28.111.135:8080/img/cdd_slide2.jpg");
-				imageUrls
-						.add("http://115.28.111.135:8080/img/cdd_slide3.jpg");
+				imageUrls.add("http://115.28.111.135:8080/img/cdd_slide1.jpg");
+				imageUrls.add("http://115.28.111.135:8080/img/cdd_slide2.jpg");
+				imageUrls.add("http://115.28.111.135:8080/img/cdd_slide3.jpg");
 				// p_ids.add(p_id);
 				// }
 				// }

@@ -6,11 +6,13 @@ import java.util.List;
 import com.cdd.customview.ActionSheetDialog;
 import com.cdd.customview.ActionSheetDialog.OnSheetItemClickListener;
 import com.cdd.customview.ActionSheetDialog.SheetItemColor;
+import com.cdd.utils.Cdd_Method;
 import com.cdd.utils.Config;
 
 import android.os.Bundle;
 import android.app.Activity;
 import android.content.Intent;
+import android.util.Log;
 import android.view.Menu;
 import android.view.View;
 import android.view.View.OnClickListener;
@@ -18,6 +20,7 @@ import android.view.Window;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class InfoPageOneActivity extends Activity implements OnClickListener {
 	private ImageView back;
@@ -75,7 +78,15 @@ public class InfoPageOneActivity extends Activity implements OnClickListener {
 			showLeiBieDialog();
 			break;
 		case R.id.pinzhongChoose:
-
+			String edit1 = leibie.getText().toString();
+	    	if (edit1.equals("") || edit1.length() == 0) {
+				Cdd_Method.showToast(this, "请先选择类别");
+				return;
+			}else {
+				Intent intent2 = new Intent(this, PetListSearchActivity.class);
+				intent2.putExtra("leibie", getLeiBie(edit1));
+				startActivityForResult(intent2, 111);
+			}
 			break;
 		case R.id.ageChoose:
 			showAgeDialog();
@@ -84,7 +95,13 @@ public class InfoPageOneActivity extends Activity implements OnClickListener {
 			break;
 		}
 	}
-
+    private int getLeiBie(String leibie){
+    	if (leibie.equals(Config.dog)) {
+			return R.array.dog;
+		}else {
+			return R.array.cat;
+		}
+    }
 	private void showAgeDialog() {
 		// TODO Auto-generated method stub
 		ActionSheetDialog dialog;
@@ -128,6 +145,14 @@ public class InfoPageOneActivity extends Activity implements OnClickListener {
 						});
 			}
 			dialog.show();
+		}
+	}
+
+	@Override
+	protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+		// TODO Auto-generated method stub
+		if (resultCode == RESULT_OK) {
+			pinzhong.setText(data.getStringExtra("pinzhong"));
 		}
 	}
 }

@@ -10,6 +10,8 @@
         android:text="@string/mine" />
 
     <ImageView
+        android:id="@+id/to_set"
+        android:onClick="toSet"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentRight="true"

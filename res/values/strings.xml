@@ -84,5 +84,14 @@
     <string name="title_activity_deal_order">DealOrderActivity</string>
     <string name="title_activity_confirm_order">ConfirmOrderActivity</string>
     <string name="title_activity_pet_list_search">PetListSearchActivity</string>
+    <string name="choosepettype">选择品种</string>
+    <string name="title_activity_set">SetActivity</string>
+    <string name="set">设置</string>
+    <string name="title_activity_wallet">WalletActivity</string>
+    <string name="title_activity_discount">DiscountActivity</string>
+    <string name="title_activity_message">MessageActivity</string>
+    <string name="title_activity_address_manger">AddressMangerActivity</string>
+    <string name="title_activity_about_us">AboutUsActivity</string>
+    <string name="title_activity_feedback">FeedbackActivity</string>
 
 </resources>

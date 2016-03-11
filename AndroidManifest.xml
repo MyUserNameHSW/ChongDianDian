@@ -76,6 +76,34 @@
             android:name="com.cdd.chongdiandian.PetListSearchActivity"
             android:label="@string/title_activity_pet_list_search" >
         </activity>
+        <activity
+            android:name="com.cdd.chongdiandian.SetActivity"
+            android:label="@string/title_activity_set" >
+        </activity>
+        <activity
+            android:name="com.cdd.chongdiandian.WalletActivity"
+            android:label="@string/title_activity_wallet" >
+        </activity>
+        <activity
+            android:name="com.cdd.chongdiandian.DiscountActivity"
+            android:label="@string/title_activity_discount" >
+        </activity>
+        <activity
+            android:name="com.cdd.chongdiandian.MessageActivity"
+            android:label="@string/title_activity_message" >
+        </activity>
+        <activity
+            android:name="com.cdd.chongdiandian.AddressMangerActivity"
+            android:label="@string/title_activity_address_manger" >
+        </activity>
+        <activity
+            android:name="com.cdd.chongdiandian.AboutUsActivity"
+            android:label="@string/title_activity_about_us" >
+        </activity>
+        <activity
+            android:name="com.cdd.chongdiandian.FeedbackActivity"
+            android:label="@string/title_activity_feedback" >
+        </activity>
     </application>
 
 </manifest>
