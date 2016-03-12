@@ -26,6 +26,7 @@
     <string name="coupon">我的优惠券</string>
     <string name="message">消息中心</string>
     <string name="addressManger">收货地址</string>
+    <string name="addressManager">管理收货地址</string>
     <string name="aboutus">关于我们</string>
     <string name="feedback">问题反馈</string>
     <string name="title_activity_info_page_one">InfoPageOneActivity</string>
@@ -93,5 +94,6 @@
     <string name="title_activity_address_manger">AddressMangerActivity</string>
     <string name="title_activity_about_us">AboutUsActivity</string>
     <string name="title_activity_feedback">FeedbackActivity</string>
+    <string name="title_activity_choose_address">ChooseAddressActivity</string>
 
 </resources>

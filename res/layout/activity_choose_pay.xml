@@ -61,6 +61,7 @@
                     android:text="@string/money_type3" />
 
                 <RadioButton
+                    android:id="@+id/custom_pay"
                     style="@style/radio_btn"
                     android:layout_marginLeft="20dp"
                     android:text="@string/money_type4" />
@@ -86,6 +87,7 @@
                 android:textSize="16sp" />
 
             <TextView
+                android:id="@+id/cycle"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="20dp"
@@ -100,12 +102,20 @@
             android:background="@color/gray1" />
 
         <TextView
+            android:id="@+id/acp_chooseAddress"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
+            android:background="@drawable/normal_btn_selcetor"
+            android:clickable="true"
             android:drawableRight="@drawable/u102"
             android:text="@string/choose_address"
             android:textSize="16sp" />
+
+        <include
+            android:id="@+id/acp_address"
+            android:visibility="gone"
+            layout="@layout/addresslist_item" />
 
         <View
             android:layout_width="match_parent"

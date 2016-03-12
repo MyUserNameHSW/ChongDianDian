@@ -104,6 +104,10 @@
             android:name="com.cdd.chongdiandian.FeedbackActivity"
             android:label="@string/title_activity_feedback" >
         </activity>
+        <activity
+            android:name="com.cdd.chongdiandian.ChooseAddressActivity"
+            android:label="@string/title_activity_choose_address" >
+        </activity>
     </application>
 
 </manifest>
