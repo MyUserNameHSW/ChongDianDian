@@ -108,6 +108,30 @@
             android:name="com.cdd.chongdiandian.ChooseAddressActivity"
             android:label="@string/title_activity_choose_address" >
         </activity>
+        <activity
+            android:name="com.cdd.chongdiandian.NotPayActivity"
+            android:label="@string/title_activity_not_pay" >
+        </activity>
+        <activity
+            android:name="com.cdd.chongdiandian.ShippingActivity"
+            android:label="@string/title_activity_shipping" >
+        </activity>
+        <activity
+            android:name="com.cdd.chongdiandian.ReceiptingActivity"
+            android:label="@string/title_activity_receipting" >
+        </activity>
+        <activity
+            android:name="com.cdd.chongdiandian.AssessingActivity"
+            android:label="@string/title_activity_assessing" >
+        </activity>
+        <activity
+            android:name="com.cdd.chongdiandian.CustomerBackActivity"
+            android:label="@string/title_activity_customer_back" >
+        </activity>
+        <activity
+            android:name="com.cdd.chongdiandian.HelpActivity"
+            android:label="@string/title_activity_help" >
+        </activity>
     </application>
 
 </manifest>

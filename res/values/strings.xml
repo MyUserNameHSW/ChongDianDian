@@ -1,6 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
+    <string name="name">杭州-奇芝</string>
+    <string name="slogan">动感奇芝，触动你的心</string>
+    <string name="email">邮箱 : </string>
+    <string name="email_text">contact@cheezhi.com</string>
+    <string name="phone">电话 : </string>
+    <string name="phone_text">0571—56622731</string>
+    <string name="net_ad">网址 : </string>
+    <string name="net_add_text">http://www.cheezhi.com/</string>
+    <string name="name1">Copyright © Cheezhi Techonology</string>
+    <string name="name2">浙ICP备15028630号-1</string>
     <string name="app_name">宠点点</string>
     <string name="action_settings">Settings</string>
     <string name="hello_world">Hello world!</string>
@@ -22,11 +32,13 @@
     <string name="tuihuo">退货/售后</string>
     <string name="bangzhu">帮助</string>
     <string name="loginorregister">请登录</string>
+    <string name="zhanghuyue">账户余额</string>
     <string name="wallet">我的钱包</string>
     <string name="coupon">我的优惠券</string>
     <string name="message">消息中心</string>
     <string name="addressManger">收货地址</string>
     <string name="addressManager">管理收货地址</string>
+    <string name="add_address">新增收货地址</string>
     <string name="aboutus">关于我们</string>
     <string name="feedback">问题反馈</string>
     <string name="title_activity_info_page_one">InfoPageOneActivity</string>
@@ -63,6 +75,8 @@
     <string name="forgetPassword">忘记密码</string>
     <string name="title_activity_register">RegisterActivity</string>
     <string name="backs">返回</string>
+    <string name="contect">联系方式</string>
+    <string name="qqemail">qq/邮箱</string>
     <string name="title_activity_msg_login">MsgLoginActivity</string>
     <string name="title_activity_forget_code">ForgetCodeActivity</string>
     <string name="title_activity_set_new_code">SetNewCodeActivity</string>
@@ -95,5 +109,17 @@
     <string name="title_activity_about_us">AboutUsActivity</string>
     <string name="title_activity_feedback">FeedbackActivity</string>
     <string name="title_activity_choose_address">ChooseAddressActivity</string>
+    <string name="submit">提交</string>
+    <string name="in_money">充值</string>
+    <string name="out_money">提现</string>
+    <string name="bankcard">我的银行卡</string>
+    <string name="xiaofeijilu">消费记录</string>
+    <string name="payManager">支付记录</string>
+    <string name="title_activity_not_pay">NotPayActivity</string>
+    <string name="title_activity_shipping">ShippingActivity</string>
+    <string name="title_activity_receipting">ReceiptingActivity</string>
+    <string name="title_activity_assessing">AssessingActivity</string>
+    <string name="title_activity_customer_back">CustomerBackActivity</string>
+    <string name="title_activity_help">HelpActivity</string>
 
 </resources>

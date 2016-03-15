@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <color name="gray_text">#848484</color>
+    <color name="gray_text2">#828282</color>
     <color name="themeColor">#76bfc3</color>
     <color name="morebtnColor">#76bfc3</color>
     <color name="morebtnpressColor">#5db0b5</color>

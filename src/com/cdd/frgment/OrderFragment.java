@@ -5,9 +5,15 @@ import java.util.List;
 
 import com.cdd.adapter.OrderMenuAdapter;
 import com.cdd.bean.OrderMenu;
+import com.cdd.chongdiandian.AssessingActivity;
 import com.cdd.chongdiandian.ConfirmOrderActivity;
+import com.cdd.chongdiandian.CustomerBackActivity;
 import com.cdd.chongdiandian.DealOrderActivity;
+import com.cdd.chongdiandian.HelpActivity;
+import com.cdd.chongdiandian.NotPayActivity;
 import com.cdd.chongdiandian.R;
+import com.cdd.chongdiandian.ReceiptingActivity;
+import com.cdd.chongdiandian.ShippingActivity;
 
 import android.app.Fragment;
 import android.content.Intent;
@@ -16,6 +22,8 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
+import android.widget.AdapterView.OnItemClickListener;
 import android.widget.GridView;
 import android.widget.ImageView;
 import android.widget.TextView;
@@ -46,6 +54,40 @@ public class OrderFragment extends Fragment implements OnClickListener {
 		gridView = (GridView) view.findViewById(R.id.ordermenu_gridview);
 		adapter = new OrderMenuAdapter(getActivity(), list);
 		gridView.setAdapter(adapter);
+		gridView.setOnItemClickListener(new OnItemClickListener() {
+
+			private Intent intent;
+
+			@Override
+			public void onItemClick(AdapterView<?> arg0, View arg1, int arg2,
+					long arg3) {
+				// TODO Auto-generated method stub
+				switch (arg2) {
+				case 0:
+					intent = new Intent(getActivity(), NotPayActivity.class);
+					break;
+				case 1:
+					intent = new Intent(getActivity(), ShippingActivity.class);
+					break;
+				case 2:
+					intent = new Intent(getActivity(), ReceiptingActivity.class);
+					break;
+				case 3:
+					intent = new Intent(getActivity(), AssessingActivity.class);
+					break;
+				case 4:
+					intent = new Intent(getActivity(), CustomerBackActivity.class);
+					break;
+				case 5:
+					intent = new Intent(getActivity(), HelpActivity.class);
+					break;
+				default:
+					break;
+				}
+				startActivity(intent);
+			}
+
+		});
 	}
 
 	private void initData() {
@@ -71,12 +113,13 @@ public class OrderFragment extends Fragment implements OnClickListener {
 		// TODO Auto-generated method stub
 		switch (arg0.getId()) {
 		case R.id.peicanzhong:
-            Intent intent = new Intent(getActivity(),DealOrderActivity.class);
-            startActivity(intent);
+			Intent intent = new Intent(getActivity(), DealOrderActivity.class);
+			startActivity(intent);
 			break;
 		case R.id.daiquerening:
-			Intent intent2 = new Intent(getActivity(),ConfirmOrderActivity.class);
-            startActivity(intent2);
+			Intent intent2 = new Intent(getActivity(),
+					ConfirmOrderActivity.class);
+			startActivity(intent2);
 			break;
 		default:
 			break;

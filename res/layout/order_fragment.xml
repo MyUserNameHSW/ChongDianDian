@@ -41,7 +41,7 @@
                 android:clickable="true"
                 android:background="@drawable/normal_btn_selcetor"
                 android:drawableLeft="@drawable/u96"
-                android:gravity="center_vertical"
+                android:gravity="center"
                 android:text="@string/peicaning"
                 android:textColor="@color/blackTextColor" />
 
@@ -59,7 +59,7 @@
                 android:clickable="true"
                 android:background="@drawable/normal_btn_selcetor"
                 android:drawableLeft="@drawable/u94"
-                android:gravity="center_vertical"
+                android:gravity="center"
                 android:text="@string/daiqueren"
                 android:textColor="@color/blackTextColor" />
         </LinearLayout>
