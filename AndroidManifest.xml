@@ -132,6 +132,10 @@
             android:name="com.cdd.chongdiandian.HelpActivity"
             android:label="@string/title_activity_help" >
         </activity>
+        <activity
+            android:name="com.cdd.chongdiandian.AllOrderActivity"
+            android:label="@string/title_activity_all_order" >
+        </activity>
     </application>
 
 </manifest>

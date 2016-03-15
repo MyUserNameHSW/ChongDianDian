@@ -5,6 +5,7 @@ import java.util.List;
 
 import com.cdd.adapter.OrderMenuAdapter;
 import com.cdd.bean.OrderMenu;
+import com.cdd.chongdiandian.AllOrderActivity;
 import com.cdd.chongdiandian.AssessingActivity;
 import com.cdd.chongdiandian.ConfirmOrderActivity;
 import com.cdd.chongdiandian.CustomerBackActivity;
@@ -31,7 +32,7 @@ import android.widget.TextView;
 public class OrderFragment extends Fragment implements OnClickListener {
 	View view;
 	List<OrderMenu> list;
-	TextView pei, confirm;
+	TextView pei, confirm, allOrder;
 	GridView gridView;
 	OrderMenuAdapter adapter;
 
@@ -47,9 +48,11 @@ public class OrderFragment extends Fragment implements OnClickListener {
 
 	private void initView() {
 		// TODO Auto-generated method stub
+		allOrder = (TextView) view.findViewById(R.id.all_orders);
 		pei = (TextView) view.findViewById(R.id.peicanzhong);
 		confirm = (TextView) view.findViewById(R.id.daiquerening);
 		pei.setOnClickListener(this);
+		allOrder.setOnClickListener(this);
 		confirm.setOnClickListener(this);
 		gridView = (GridView) view.findViewById(R.id.ordermenu_gridview);
 		adapter = new OrderMenuAdapter(getActivity(), list);
@@ -76,7 +79,8 @@ public class OrderFragment extends Fragment implements OnClickListener {
 					intent = new Intent(getActivity(), AssessingActivity.class);
 					break;
 				case 4:
-					intent = new Intent(getActivity(), CustomerBackActivity.class);
+					intent = new Intent(getActivity(),
+							CustomerBackActivity.class);
 					break;
 				case 5:
 					intent = new Intent(getActivity(), HelpActivity.class);
@@ -111,18 +115,20 @@ public class OrderFragment extends Fragment implements OnClickListener {
 	@Override
 	public void onClick(View arg0) {
 		// TODO Auto-generated method stub
+		Intent intent = null;
 		switch (arg0.getId()) {
 		case R.id.peicanzhong:
-			Intent intent = new Intent(getActivity(), DealOrderActivity.class);
-			startActivity(intent);
+			intent = new Intent(getActivity(), DealOrderActivity.class);
 			break;
 		case R.id.daiquerening:
-			Intent intent2 = new Intent(getActivity(),
-					ConfirmOrderActivity.class);
-			startActivity(intent2);
+			intent = new Intent(getActivity(), ConfirmOrderActivity.class);
+			break;
+		case R.id.all_orders:
+			intent = new Intent(getActivity(), AllOrderActivity.class);
 			break;
 		default:
 			break;
 		}
+		startActivity(intent);
 	}
 }
