@@ -21,6 +21,7 @@ import android.view.Window;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
+import android.widget.Toast;
 
 @SuppressLint("ResourceAsColor")
 public class MainActivity extends Activity implements OnClickListener {
@@ -29,6 +30,7 @@ public class MainActivity extends Activity implements OnClickListener {
 	TextView indexTextView, orderTextView, mineTextView;
 	FragmentManager manager;
 	FragmentTransaction transaction;
+	private int mBackKeyPressedTimes = 0;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -67,6 +69,7 @@ public class MainActivity extends Activity implements OnClickListener {
 		transaction.replace(R.id.main_content, fragment);
 		transaction.commit();
 	}
+
 	private void initTopData() {
 		// TODO Auto-generated method stub
 		manager = getFragmentManager();
@@ -82,21 +85,21 @@ public class MainActivity extends Activity implements OnClickListener {
 		transaction = manager.beginTransaction();
 		switch (arg0.getId()) {
 		case R.id.index_logo:
-			replaceFragment(transaction,1);
+			replaceFragment(transaction, 1);
 			replaceTopFragment(transaction, 1);
 			reset();
 			setBottomImageView(indexImageView, R.drawable.index_logo_check);
 			setBottomTextColor(indexTextView, R.color.themeColor);
 			break;
 		case R.id.order_logo:
-			replaceFragment(transaction,2);
+			replaceFragment(transaction, 2);
 			replaceTopFragment(transaction, 2);
 			reset();
 			setBottomImageView(orderImageView, R.drawable.order_logo_check);
 			setBottomTextColor(orderTextView, R.color.themeColor);
 			break;
 		case R.id.mine_logo:
-			replaceFragment(transaction,3);
+			replaceFragment(transaction, 3);
 			replaceTopFragment(transaction, 3);
 			reset();
 			setBottomImageView(mineImageView, R.drawable.mine_logo_check);
@@ -108,7 +111,7 @@ public class MainActivity extends Activity implements OnClickListener {
 		transaction.commit();
 	}
 
-	private void replaceFragment(FragmentTransaction transaction,int flag) {
+	private void replaceFragment(FragmentTransaction transaction, int flag) {
 		Fragment fragment = null;
 		switch (flag) {
 		case 1:
@@ -125,8 +128,9 @@ public class MainActivity extends Activity implements OnClickListener {
 		}
 		transaction.replace(R.id.main_content, fragment);
 	}
-    private void replaceTopFragment(FragmentTransaction transaction,int flag){
-    	Fragment fragment = null;
+
+	private void replaceTopFragment(FragmentTransaction transaction, int flag) {
+		Fragment fragment = null;
 		switch (flag) {
 		case 1:
 			fragment = new IndexTopFragment();
@@ -141,7 +145,8 @@ public class MainActivity extends Activity implements OnClickListener {
 			break;
 		}
 		transaction.replace(R.id.top_view, fragment);
-    }
+	}
+
 	private void reset() {
 		setBottomImageView(indexImageView, R.drawable.index_logo_nocheck);
 		setBottomImageView(orderImageView, R.drawable.order_logo_nocheck);
@@ -160,4 +165,27 @@ public class MainActivity extends Activity implements OnClickListener {
 				color));
 	}
 
+	@Override
+	public void onBackPressed() {
+		if (mBackKeyPressedTimes == 0) {
+			Toast.makeText(this, "再按一次退出程序 ", Toast.LENGTH_SHORT).show();
+			mBackKeyPressedTimes = 1;
+			new Thread() {
+				@Override
+				public void run() {
+					try {
+						Thread.sleep(2000);
+					} catch (InterruptedException e) {
+						e.printStackTrace();
+					} finally {
+						mBackKeyPressedTimes = 0;
+					}
+				}
+			}.start();
+			return;
+		} else {
+			finish();
+		}
+		super.onBackPressed();
+	}
 }

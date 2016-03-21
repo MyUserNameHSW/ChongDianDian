@@ -122,5 +122,7 @@
     <string name="title_activity_customer_back">CustomerBackActivity</string>
     <string name="title_activity_help">HelpActivity</string>
     <string name="title_activity_all_order">AllOrderActivity</string>
+    <string name="title_activity_add_adress">AddAdressActivity</string>
+    <string name="save">保存</string>
 
 </resources>

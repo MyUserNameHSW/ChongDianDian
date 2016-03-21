@@ -9,6 +9,7 @@
         android:targetSdkVersion="19" />
 
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
 
     <application
         android:allowBackup="true"
@@ -135,6 +136,10 @@
         <activity
             android:name="com.cdd.chongdiandian.AllOrderActivity"
             android:label="@string/title_activity_all_order" >
+        </activity>
+        <activity
+            android:name="com.cdd.chongdiandian.AddAdressActivity"
+            android:label="@string/title_activity_add_adress" >
         </activity>
     </application>
 
